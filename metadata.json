@@ -1,0 +1,6 @@
+{
+  "name": "AI Solution Designer",
+  "description": "An interactive, highly engaging web application that guides students through the AI Project Cycle: Problem, Data, Model, and Output. Features a branching scenario simulation, an AI-powered project canvas review using Gemini, and rich gamification elements.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

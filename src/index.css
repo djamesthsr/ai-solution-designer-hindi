@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Custom brand palette from Humain Learning website & attached color scheme */
+  --color-brand-bg: #1F2321;
+  --color-brand-panel: #2F3532;
+  --color-brand-cream: #F6F3E8;
+  --color-brand-gold: #C4B286;
+  --color-brand-terracotta: #95634F;
+  --color-brand-copper: #D29264;
+  --color-brand-silver: #ACB0B2;
+}
+
+/* Custom styles for high-contrast accessibility and premium design consistency */
+body {
+  background-color: #1F2321 !important;
+  color: #F6F3E8 !important;
+}
+
+/* Universal mapping of deep space dark-blue codes to organic forest/charcoal values */
+.bg-\[\#070B14\] {
+  background-color: #1F2321 !important;
+}
+.bg-\[\#070B14\]\/90 {
+  background-color: rgba(31, 35, 33, 0.9) !important;
+}
+.bg-\[\#070B14\]\/40 {
+  background-color: rgba(31, 35, 33, 0.4) !important;
+}
+.bg-\[\#131B2E\] {
+  background-color: #2F3532 !important;
+}
+.bg-\[\#131B2E\]\/50 {
+  background-color: rgba(47, 53, 50, 0.5) !important;
+}
+.bg-\[\#131B2E\]\/40 {
+  background-color: rgba(47, 53, 50, 0.4) !important;
+}
+.bg-\[\#1E293B\] {
+  background-color: #3F4844 !important;
+}
+
+/* Borders */
+.border-\[\#1E293B\] {
+  border-color: #444E49 !important;
+}
+.border-\[\#1E293B\]\/60 {
+  border-color: rgba(68, 78, 73, 0.6) !important;
+}
+.border-\[\#1E293B\]\/30 {
+  border-color: rgba(68, 78, 73, 0.3) !important;
+}
+
+/* Text selections & accessibility colors */
+.text-slate-100 {
+  color: #F6F3E8 !important;
+}
+.text-slate-300 {
+  color: #E6E2D8 !important;
+}
+.text-slate-400 {
+  color: #ACB0B2 !important;
+}
+.text-slate-500 {
+  color: #8C9294 !important;
+}
+.text-white {
+  color: #F6F3E8 !important;
+}
+
+/* Accent swaps: Cyan/Indigo -> Gold/Copper/Terracotta */
+.text-\[\#22D3EE\] {
+  color: #C4B286 !important;
+}
+.text-\[\#818CF8\] {
+  color: #D29264 !important;
+}
+.text-\[\#06B6D4\] {
+  color: #D29264 !important;
+}
+.text-\[\#06B6D4\]\/30 {
+  color: rgba(210, 146, 100, 0.3) !important;
+}
+.text-emerald-400 {
+  color: #A3C9A8 !important; /* Sage Success */
+}
+.text-\[\#F97316\] {
+  color: #D29264 !important;
+}
+
+/* Customizing the timeline / navbar selection highlights */
+.border-\[\#06B6D4\]\/30 {
+  border-color: rgba(210, 146, 100, 0.3) !important;
+}
+.bg-emerald-500\/20 {
+  background-color: rgba(163, 201, 168, 0.2) !important;
+}
+.text-emerald-400 {
+  color: #A3C9A8 !important;
+}
+.bg-emerald-500\/10 {
+  background-color: rgba(163, 201, 168, 0.1) !important;
+}
+.border-emerald-500\/30 {
+  border-color: rgba(163, 201, 168, 0.3) !important;
+}
+.bg-emerald-500\/15 {
+  background-color: rgba(163, 201, 168, 0.15) !important;
+}
+.border-emerald-500\/20 {
+  border-color: rgba(163, 201, 168, 0.2) !important;
+}
+
+/* Gradients standardization */
+.from-\[\#6366F1\] {
+  --tw-gradient-from: #95634F !important; /* Terracotta */
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(149, 99, 79, 0)) !important;
+}
+.to-\[\#06B6D4\] {
+  --tw-gradient-to: #C4B286 !important; /* Gold */
+}
+.via-\[\#06B6D4\] {
+  --tw-gradient-stops: var(--tw-gradient-from, #95634F), #D29264, var(--tw-gradient-to, #C4B286) !important;
+}
+.from-\[\#22D3EE\] {
+  --tw-gradient-from: #C4B286 !important; /* Gold */
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(196, 178, 214, 0)) !important;
+}
+.to-\[\#818CF8\] {
+  --tw-gradient-to: #D29264 !important; /* Copper */
+}
+.from-emerald-500 {
+  --tw-gradient-from: #A3C9A8 !important;
+}
+.to-teal-500 {
+  --tw-gradient-to: #C4B286 !important;
+}
+
+/* Standardized active buttons & hover highlights */
+.bg-\[\#22D3EE\] {
+  background-color: #C4B286 !important;
+  color: #1F2321 !important;
+}
+.bg-\[\#22D3EE\]:hover {
+  background-color: #D29264 !important;
+}
+.hover\:bg-\[\#06B6D4\]:hover {
+  background-color: #D29264 !important;
+}
+
+/* Selection aesthetics */
+::selection {
+  background-color: rgba(196, 178, 134, 0.25) !important;
+  color: #C4B286 !important;
+}
+
+/* Scrollbar tweaks */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
